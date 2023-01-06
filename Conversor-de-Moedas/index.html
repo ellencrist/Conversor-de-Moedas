@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!--ellencrist-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ColdClub convert money</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"  href="style.css" /> 
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Convert Money</h1>
+        </header>
+        <main>
+            <label>
+                <p  class="label"> Converter <b>de</b> </p>
+                <select class="select">
+                    <option class="placeholders"> 
+                    R$ <b>Real Brasileiro</b>
+                    </option>
+                </select>
+
+            </label>
+            <label >
+               <p class="label">  Converter <b>para</b> </p> 
+                <select id="currency-select" class="select">
+                    <option class="placeholders">
+                         US$ <b>Dólar Americano</b>
+                    </option>
+                    <option class="placeholders">
+                      € <b>Euro</b>
+                    </option>
+                    <option class="placeholders">
+                        ₿ Bitcoin 
+                    </option>
+                </select>
+            </label>
+        <label>
+            <p class="valor"><b>Valor</b></p><br>
+            <input id="input-real" placeholder="R$10.000,00">
+        </label> 
+        
+        <button id="convert-button" class="button" type="button">converter</button>
+        <section>
+           <div class="band">
+               <img src="imgs/BRASIL.png" alt="bandeira-brasil">
+               <p class="moeda">Real</p>
+               <p id="real-value-text" class="number">R$ 10.000,00</p>
+           </div> 
+
+           <img class="vector" src="imgs/VECTOR.png" alt="bandeira-eua">
+           <div class="band"a>
+            <img src="imgs/EUA.png" id="currency-img">
+            <p class="moeda" id="currency-name" >Dólar Americano</p>
+            <p class="number" id="currency-value-text">US$ 2.000,00</p>
+        </div>
+
+        </section>
+        </main>
+    </div>
+</body>
+<script src="./scripts.js"></script>
+
+</html>
